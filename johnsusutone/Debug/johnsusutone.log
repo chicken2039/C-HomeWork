@@ -1,0 +1,5 @@
+﻿  IMSlave.cpp
+c:\users\administrator\documents\visual studio 2015\projects\johnsusutone\johnsusutone\func.h(18): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+c:\users\administrator\documents\visual studio 2015\projects\johnsusutone\johnsusutone\imslave.cpp(5): warning C4101: 'Block' :참조되지 않은 지역 변수입니다.
+  johnsusutone.vcxproj -> C:\Users\Administrator\documents\visual studio 2015\Projects\johnsusutone\Debug\johnsusutone.exe
+  johnsusutone.vcxproj -> C:\Users\Administrator\documents\visual studio 2015\Projects\johnsusutone\Debug\johnsusutone.pdb (Full PDB)
