@@ -2,6 +2,7 @@
 
 void initLinkedList(void);
 
+void Apply_Command(char command[]);
 
 int main()
 {
@@ -63,6 +64,8 @@ int main()
 			fgets(Command, 50, stdin);		//명령어 받기
 			gotoxy(8, 26);
 			printf("　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　");// 줄 비우기
+			fflush(stdin);
+			Apply_Command(Command);
 
 
 		}
@@ -72,7 +75,6 @@ int main()
 			Sleep(1000);		//상대 턴일때 텀을줌
 
 								//인공지능 들어가야함
-			getch();
 		}
 
 	}
@@ -103,4 +105,37 @@ void initLinkedList(void)//head,tail 생성
 
 	tail -> next=NULL;
 	
+}
+
+void Apply_Command(char command[])
+{
+	char* result;
+	char* first[3];
+	int i = 0;
+	int j = 0;
+	result = strtok(command, " ");
+	while (result!=NULL,i<3)
+	{
+		
+		first[i] = result;
+		result = strtok(NULL, " ");
+
+		i++;
+	}
+	if (first[0] == "make\0")
+		printf("\n\n오늘밤!");
+}
+
+void Add_History ()
+{
+
+
+}
+struct unit check_direct(int dr, struct unit orc) //(방향,기준)
+{
+	
+}
+void Move_Unit(struct unit orc)
+{
+
 }

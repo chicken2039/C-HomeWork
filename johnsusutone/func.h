@@ -29,10 +29,6 @@ struct block //블럭
 	int x_resor, y_resor;
 	BOOL summonAble;
 };
-void Apply_Command(char command[])
-{
-
-}
 
 
 void print_OnBoard(int x , int y,char ang[] ) //환경 출력
