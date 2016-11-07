@@ -97,6 +97,8 @@ typedef struct unit //유닛
 	struct unit *before;	//이전 유닛
 }unit;
 
+
+
 void initLinkedList(void)//head,tail 생성
 {
 	unit *head=(unit*)malloc(sizeof(unit));
@@ -122,8 +124,26 @@ void Apply_Command(char command[])
 
 		i++;
 	}
-	if (first[0] == "make\0")
-		printf("\n\n오늘밤!");
+	if (!strcmp(first[0], "make"))
+	{
+		if (!strcmp(first[1], "worker")) 
+		{
+			
+		}
+		else if (!strcmp(first[1], "army"))
+		{
+
+		}
+		else
+		{
+			
+		}
+	}
+	if (!strcmp(first[0], "move"))
+	{
+
+	}
+
 }
 
 void Add_History ()
@@ -131,10 +151,10 @@ void Add_History ()
 
 
 }
-struct unit check_direct(int dr, struct unit orc) //(방향,기준)
-{
-	
-}
+//struct unit check_direct(int dr, struct unit orc) //(방향,기준) //이동하는 명령어였다...
+//{	
+//	return struct unit king;
+//}
 void Move_Unit(struct unit orc)
 {
 
